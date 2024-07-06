@@ -24,10 +24,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: textShadowAnimation 3s ease infinite;
 }
 
-@keyframes textShadowAnimation {
+/* @keyframes textShadowAnimation {
     0% {
         text-shadow: 2px 2px rgba(255, 0, 0, 0.24);
     }
@@ -37,15 +36,35 @@
     100% {
         text-shadow: 2px 2px rgba(255, 0, 0, 0.26);
     }
-}
+} */
 
 #title {
-    position: relative;
-    font-family: "Hammersmith One", sans-serif;
+    display: flex;
+    flex-direction: column;
     font-size: 100px;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 500px;
+    text-shadow: 2px 2px #503737;
 }
 
 #smol {
     position: absolute;
-    margin-top: 100px;
+    padding-top: 85px;
+    padding-left: 60px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #EFEFEF;
+}
+
+.hovered {
+    color: #948A8A;
+    cursor: pointer
 }
