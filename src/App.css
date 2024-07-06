@@ -1,3 +1,4 @@
+
 #blur {
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -20,4 +21,19 @@
     height: 100%;
     background: rgba(0, 0, 0, 0); /* Fully transparent */
     z-index: 1; /* Above the panorama viewer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    position: relative;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 100px;
+}
+
+#smol {
+    position: absolute;
+    margin-top: 100px;
 }

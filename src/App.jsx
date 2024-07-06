@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import './App.css'
 import panoramaImage from './unswcompressed.jpg'; // Import the image
+// https://jpeg-optimizer.com/
 
 function App() {
   const pannellumContainer = useRef(null);
@@ -32,7 +33,12 @@ function App() {
       >
       </div>
     </filter>
-    <div className="overlay"></div>
+    <div className="overlay">
+      <div id="title">
+        <span style={{ color: "#EFFF33" }}>yellow</span><span style={{ color: "#FFDC00" }}>shirt</span>
+      </div>
+        <div id="smol" style= {{ color: "#CEDB38", fontSize: "30px" }}>do you have what it takes?</div>
+    </div>
     </>
   )
 }
