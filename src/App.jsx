@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import './App.css'
-import panoramaImage from './image.png'; // Import the image
+import panoramaImage from './unswcompressed.jpg'; // Import the image
 
 function App() {
   const pannellumContainer = useRef(null);
@@ -17,9 +17,9 @@ function App() {
         draggable: false,
         keyboardZoom: false,
         showZoomCrtl: false,
+        showLoadButton: false,
         autoRotate: 5
       });
- 
     }
   }, []);
   return (
@@ -32,6 +32,7 @@ function App() {
       >
       </div>
     </filter>
+    <div className="overlay"></div>
     </>
   )
 }
